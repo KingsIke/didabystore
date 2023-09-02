@@ -1,31 +1,36 @@
 import React from 'react';
-
+import Shoe from "../../images/image 1.png"
+import Categories from './Categories'
+import Computer from '../Body/computer'
+import Onsales from './Onsale'
+import Feature from './FeatureProduct'
+import Card from './Card'
+import News from './News'
+import Footer from './footer'
 const MultiColumnLayout = () => {
   return (
-    <div className="flex">
+    <>
+    
+    <div className="flex w-[1512px]">
       {/* Left Sticky Column */}
-      <div className="sticky top-0 h-screen w-1/4 bg-gray-200 px-4 py-8">
+      <div className="sticky top-0 h-screen w-[347px] bg-white px-4 py-8">
         {/* Content for the sticky column */}
-        Sticky Column
+      <Categories />
       </div>
 
       {/* Constrained Content */}
-      <div className="flex-1 overflow-x-hidden">
+      <div className="flex-1 shadow-xl shadow-orange-300 w-[1040px]  overflow-x-hidden">
         <div className="mx-auto max-w-7xl p-8">
           {/* Your content here */}
-          <div className="grid grid-cols-3 gap-8">
-            <div className="col-span-1 bg-white p-4 shadow">
-              Column 1 Content
-            </div>
-            <div className="col-span-1 bg-white p-4 shadow">
-              Column 2 Content
-            </div>
-            <div className="col-span-1 bg-white p-4 shadow">
-              Column 3 Content
-            </div>
-          </div>
-        </div>
+          <Computer/>
+          <Card  />
+          <Onsales/>
+          <Feature />
+          <News />
+          
 
+
+        </div>
 
 
 
@@ -41,7 +46,15 @@ const MultiColumnLayout = () => {
         
       </div>
     </div>
+
+    <Footer />
+
+    
+    </>
+    
   );
 };
 
 export default MultiColumnLayout;
+
+

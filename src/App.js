@@ -4,6 +4,9 @@ import Signup from './components/signUp/signup'
 import Signin from './components/signIn/signin'
 import Footer from './components/footer/footer'
 import MultiColumnLayout from './components/testing/test'
+import Card from './components/Body/computer'
+import Search from './components/Nav/Searchbar/searchbar'
+
 
 
 
@@ -21,6 +24,11 @@ function App() {
             <Route path='/' element={< Signin/>} />
             <Route path='/footer' element={< Footer/>} />
             <Route path='/test' element={< MultiColumnLayout/>} />
+            <Route path='/board' element={< Card/>} />
+            <Route path='/search' element={< Search/>} />
+
+
+            {/* Dashboard */}
 
 
             

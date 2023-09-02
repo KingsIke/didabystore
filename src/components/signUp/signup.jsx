@@ -2,6 +2,7 @@ import React from 'react';
 import Dogo from '../../images/didaylogo.jpg';
 import { FaGooglePlusG } from 'react-icons/fa';
 
+
 function Signup() {
   return (
     <div className="flex justify-center items-center h-screen bg-['#f3f4f6']">

@@ -5,9 +5,14 @@ module.exports = {
   ],
   theme: {
     extend: {
-
+      fontFamily: {
+        display: ["Genos"],
+      },
     },
   },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/aspect-ratio'),
+    [require("daisyui")],
+  ],
 }
 
