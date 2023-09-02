@@ -62,7 +62,7 @@ const nextSlide = () => {
           <img className="carousel-image w-[118px] h-[176px] ml-16 mt-11" src={images[(currentIndex + 1) % images.length]} alt="" />
         </div>
       </div>
-      <div className="carousel-controls absolute mt-72 ml-4">
+      <div className="carousel-controls absolute mt-[277px] ml-4 mb-3">
         <button className="carousel-control-button" onClick={prevSlide}>
           <GoDotFill />
         </button>

@@ -2,20 +2,17 @@ import React from "react";
 import Cloth from '../../images/image 2.png'
 import { FaFire } from 'react-icons/fa';
 import { GiSelfLove } from 'react-icons/gi'
-
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
 const Card = () => {
     return (
         <>
-            <div className="bg-[#fec634] my-4 container  flex flex-col h-[385px] w-[1000px]">
-                <div className="flex lg:ml-16 mt-3">
+            <div className="bg-[#fec634] my-4 container  flex flex-col h-[345px] w-[1000px]">
+                <div className="flex lg:ml-16 mt-2">
                     <FaFire class="text-2xl text-[#d40000] mr-2" />
                     <h2>On Sale</h2>
                 </div>
 
 
-                <div className=" flex justify-evenly mt-12 ">
+                <div className=" flex justify-evenly mt-4 ">
 
 
                     <div className="card relative rounded bg-white w-fit shadow transition duration-300 hover:shadow-lg ml-3 px-2 ">
@@ -28,7 +25,7 @@ const Card = () => {
 
                         <img src={Cloth} alt="Avatar" className="w-fit mt-4 border-solid border-2 border-red-400" />
                         <div className="flex px-1">
-                            <div className="container p-2 flex flex-col justify-between">
+                            <div className="container p-1 flex flex-col justify-between">
                                 <h4 className="font-bold">Nike Sneakers</h4>
                                 <div class="flex items-center space-x-1">
                                     <svg class="w-3 h-3 text-yellow-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">

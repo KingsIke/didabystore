@@ -15,7 +15,7 @@ const MultiColumnLayout = () => {
       {/* Left Sticky Column */}
       <div className="sticky top-0 h-screen w-[230px] bg-white px-4 py-8">
         {/* Content for the sticky column */}
-      <Categories />
+      <Categories  />
       </div>
 
       {/* Constrained Content */}

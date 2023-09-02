@@ -8,14 +8,14 @@ import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
 const Card = () => {
   return (
     <>
-    <div  className="bg-[#000] ml-2 container  flex flex-col h-[385px] w-[1035px]">
-        <div className="flex lg:ml-16 mt-3">
+    <div  className="bg-[#000]  container my-4 flex flex-col h-[345px] w-[1000px]">
+        <div className="flex lg:ml-16 mt-2">
    <FaRegStar class="text-2xl text-[#b4ffbb] mr-2" />
         <h2 className="text-white">Feature Product</h2>
         </div>
    
    
-    <div className=" flex justify-evenly mt-12 "> 
+    <div className=" flex justify-evenly mt-4 "> 
    
 
    <div className="card relative rounded bg-white w-fit shadow transition duration-300 hover:shadow-lg ml-3 px-2 ">
