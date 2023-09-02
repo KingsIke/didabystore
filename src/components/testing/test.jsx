@@ -13,7 +13,7 @@ const MultiColumnLayout = () => {
     
     <div className="flex w-[1512px]">
       {/* Left Sticky Column */}
-      <div className="sticky top-0 h-screen w-[347px] bg-white px-4 py-8">
+      <div className="sticky top-0 h-screen w-[230px] bg-white px-4 py-8">
         {/* Content for the sticky column */}
       <Categories />
       </div>

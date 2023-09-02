@@ -46,10 +46,10 @@ const nextSlide = () => {
   
 
   return (
-    <div className="carousel-container w-[1035px] h-[412px] flex justify-between bg-[#fec634]">
+    <div className="carousel-container w-[980px] h-[302px] flex justify-between bg-[#fec634]">
       <div className="carousel-content flex items-center">
         
-        <div className="carousel-text w-[454px] ml-14 ">
+        <div className="carousel-text w-[430px] ml-10">
           <h1 className="font-bold text-4xl">{content[currentIndex].title}</h1>
           <h1 className="font-bold text-4xl">Shopping</h1>
           <p>{content[currentIndex].text}</p>
@@ -58,11 +58,11 @@ const nextSlide = () => {
           </button>
         </div>
         <div className="carousel-image-container flex ml-14">
-          <img className="carousel-image " src={images[currentIndex]} alt=""  />
-          <img className="carousel-image w-[118px] h-[196px] ml-16 mt-16" src={images[(currentIndex + 1) % images.length]} alt="" />
+          <img className="carousel-image w-[190px] h-[260px]  " src={images[currentIndex]} alt=""  />
+          <img className="carousel-image w-[118px] h-[176px] ml-16 mt-11" src={images[(currentIndex + 1) % images.length]} alt="" />
         </div>
       </div>
-      <div className="carousel-controls absolute mt-96 ml-4">
+      <div className="carousel-controls absolute mt-72 ml-4">
         <button className="carousel-control-button" onClick={prevSlide}>
           <GoDotFill />
         </button>

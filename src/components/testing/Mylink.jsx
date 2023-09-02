@@ -24,7 +24,7 @@ export const links = [
       ],
     },
     {
-        name: 'Jeewellries',
+        name: 'Jewellries',
         sublinks: [
           { name: 'Sublink 2.1', link: '#' },
           { name: 'Sublink 2.2', link: '#' },
