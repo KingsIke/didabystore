@@ -16,7 +16,7 @@ function Dashboard() {
 <div className="bg-[#b1b0b0] fixed w-full z-20 top-0 left-0 px-0 py-0 text-justify">
   <div className="max-w-screen-xl flex items-center justify-between mx-auto">
 
-    <p className="self-center text-xs font-bold whitespace-nowrap dark:text-white ml-4">
+    <p className="self-center text-xs font-bold whitespace-nowrap dark:text-white ml-1">
       <FaMicrophone className="inline-block mr-1" />(01)-57293221
     </p>
     <p className="self-center text-xs font-bold whitespace-nowrap dark:text-white ml-4">

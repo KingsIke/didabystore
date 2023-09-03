@@ -15,9 +15,9 @@ const SearchInput = ({
 return (<>    
 <Dashboard />
     
-<div class="flex items-stretch justify-between b border-double border-4 border-indigo-600 justify-items-center mb-10 py-0 ml-2">
+<div class="flex items-stretch justify-between  justify-items-center mb-4 py-0 ml-2">
     <div class="flex">
-    <h1 class="font-bold text-4xl leading-48 font-display">Didaby</h1>
+    <h1 class="font-bold text-4xl leading-48 font-display ml-2">Didaby</h1>
     <img src={BagLogo} alt="" class="w-10 h-10"/>
     </div>
   
@@ -51,11 +51,11 @@ return (<>
       </button> */}
 
 
-<div class="relative w-full">
+<div class="relative w-[445px] ">
     <input
         type="search"
         id="search-dropdown"
-        class="py-2 pr-10 pl-12 rounded-l-lg bg-gray-100 focus:outline-none focus:ring block p-2.5 w-full z-20 text-sm text-gray-900 dark:bg-gray-700 dark:border-l-gray-700 dark:border-gray-600 dark:placeholder-gray-400"
+        class="py-2 pr-10 pl-12 rounded-l-lg bg-gray-100 focus:outline-none focus:ring block p-2.5 w-full z-20 text-sm text-gray-900 dark:bg-gray-700 dark:border-l-gray-700 dark:border-gray-600 dark:placeholder-gray-400 border border-gray-300"
         placeholder="search and hit enter"
         required
     />
@@ -80,9 +80,9 @@ return (<>
   </form>
 
   <div class="h-10 mr-5">
-    <ul class="flex space-x-6 py-1">
+    <ul class="flex space-x-6 pt-1">
         <li class="flex items-center mr-4">
-            <div class="w-10 h-10 flex items-center justify-center rounded-full bg-gray-400">
+            <div class="w-7 h-7 flex items-center justify-center rounded-full bg-gray-400">
                 <IoMdContact class="text-2xl text-black" />
             </div>
             <span class="text-lg ml-1">hi Victor</span>
@@ -92,14 +92,14 @@ return (<>
         </li>
 
         <li class="flex items-center">
-            <div class="w-10 h-10 flex items-center justify-center rounded-full bg-gray-400">
+            <div class="w-7 h-7 flex items-center justify-center rounded-full bg-gray-400">
                 <GiSelfLove class="text-2xl text-black" />
             </div>
         </li>
         <li class="flex items-center relative">
-            <div class="w-10 h-10 flex items-center justify-center rounded-full bg-gray-400">
+            <div class="w-7 h-7 flex items-center justify-center rounded-full bg-gray-400">
                 <BiSolidCart class="text-2xl text-black" />
-                <span class="absolute inline-flex rounded-full h-4 w-4 bg-red-900 top-0 right-0 items-center justify-center text-white text-xs">
+                <span class="absolute inline-flex rounded-full h-3 w-3 bg-red-900 top-0 right-0 items-center justify-center text-white text-xs">
                     4
                 </span>
             </div>

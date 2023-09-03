@@ -23,7 +23,7 @@ const Card = () => {
                             </span>
                         </div>
 
-                        <img src={Cloth} alt="Avatar" className="w-fit mt-4 border-solid border-2 border-red-400" />
+                        <img src={Cloth} alt="Avatar" className="w-fit mt-4 " />
                         <div className="flex px-1">
                             <div className="container p-1 flex flex-col justify-between">
                                 <h4 className="font-bold">Nike Sneakers</h4>
