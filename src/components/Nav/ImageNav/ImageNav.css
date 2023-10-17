@@ -1,0 +1,92 @@
+@import url('http://fonts.googleapis.com/css2?family=Mada&display=swap');
+.ImageContainer{
+position: relative;
+}
+
+.Imageposition{
+    text-align: center;
+}
+
+.Imageposition{
+    position:absolute;
+top: 80px;
+}
+
+.love{
+    background: rgba(235, 238, 241, 0.82);
+}
+.imageH1{
+/* position:absolute;
+margin-left: 250px;
+top: 50px; */
+margin-left: 330px;
+text-align: center;
+/* color: aliceblue; */
+font-family: Mada;
+font-size: 45px;
+font-style: normal;
+font-weight: 700;
+/* line-height: normal; */
+
+}
+
+.posIma{
+margin-left: 190px;
+}
+.Imagebtn{
+
+
+    border-radius: 15px;
+    background-color:#87C505 ;
+    border: 2px solid #87C505 ;
+
+    color: white;
+    padding: 6px 6px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    /* margin: 4px 8px; */
+    margin-left:120px ; 
+    /* margin-left: 90px; */
+    cursor: pointer;
+    font-weight: 500;
+    width: 90px;
+}
+
+.ImageSell{
+   
+    border-radius: 15px;
+    border: 2px solid #87C505 ;
+
+/* background-color: white; */
+color: #87C505;
+padding: 6px 6px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 16px;
+/* margin: 4px 2px; */
+font-weight: 500;
+margin-left: 25px;
+
+/* transition-duration: 0.4s; */
+cursor: pointer;
+width: 90px;
+
+}
+
+/* background-color: white; 
+color: black; 
+border: 2px solid #008CBA; */
+
+/* border: none;
+color: white;
+padding: 16px 32px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 16px;
+margin: 4px 2px;
+transition-duration: 0.4s;
+cursor: pointer; */

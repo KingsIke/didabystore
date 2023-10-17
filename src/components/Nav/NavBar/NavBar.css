@@ -1,0 +1,28 @@
+@import url('http://fonts.googleapis.com/css2?family=Mada&display=swap');
+
+.NavContainer{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    /* margin: 50px, 52px; */
+    margin-top: 20px;
+}
+
+
+.NavHome{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;  
+    font-family: Mada;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.NavIcons{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;  
+}
+.iconsNav{
+    font-size: 31px;
+}

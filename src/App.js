@@ -11,6 +11,7 @@ import Search from './components/Nav/Searchbar/searchbar'
 
 
 import { Routes, BrowserRouter as Router, Route } from 'react-router-dom'
+import NavBar from './components/Nav/ImageNav/ImageNav';
 function App() {
   return (
     < React.Fragment >
@@ -22,6 +23,8 @@ function App() {
           <Routes>
             <Route path='/signup' element={< Signup/>} />
             <Route path='/' element={< Signin/>} />
+            <Route path='/nav' element={< NavBar/>} />
+
             <Route path='/footer' element={< Footer/>} />
             <Route path='/test' element={< MultiColumnLayout/>} />
             <Route path='/board' element={< Card/>} />
