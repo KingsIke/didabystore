@@ -1,0 +1,69 @@
+@import url('http://fonts.googleapis.com/css2?family=Mada&display=swap');
+
+.newPage{
+    font-family: Mada;
+
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+margin: 0;
+}
+
+.arrivalContainer{
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+}
+
+.headerArrival{
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0 ;
+    /* text-align: center; */
+    
+}
+
+.viewArrival{
+    color: #333;
+    font-family: Mada;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin: 0;
+}
+
+.imageArrival{
+border: 1px solid green;
+position: relative;
+}
+.imageSpan{
+    position: absolute;
+    margin-top: 10px;
+    right: 15px;
+    background-color: aliceblue;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+}
+.titleP{
+    color: #333;
+font-family: Mada;
+font-size: 16px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+}
+
+.priceP{
+    color: #5A5A5A;
+    font-family: Mada;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+.priceTitle{
+    white-space: nowrap;
+}

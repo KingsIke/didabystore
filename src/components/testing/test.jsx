@@ -2,7 +2,7 @@ import React from 'react';
 import Shoe from "../../images/image 1.png"
 import Categories from './Categories'
 import Computer from '../Body/computer'
-import Onsales from './Onsale'
+import Onsales from './NewArrivals'
 import Feature from './FeatureProduct'
 import Card from './Card'
 import News from './News'

@@ -22,7 +22,7 @@ function Signup() {
     </div>
 
     {/* Right side with sign-up form */}
-    <div className="flex-1 flex flex-col items-center justify-center     w-3/4">
+    <div className="flex-1 flex flex-col items-center justify-center  h-100%   w-3/4">
       <h3 className="signIn">Create an Account</h3>
       <p className="signInP">Welcome to Didaby store</p>
       <button 
@@ -45,7 +45,7 @@ function Signup() {
       id="name"
       name="name"
       placeholder="Name"
-      className="w-full border px-3 py-2 h-[50px] rounded-[15px]"
+      className="w-full border px-3 py-2 h-[45px] rounded-[15px]"
       required
     />
   </div>
@@ -57,7 +57,7 @@ function Signup() {
       id="email"
       name="email"
       placeholder="Email Address"
-      className="w-full border px-3 py-2 h-[50px] rounded-[15px]"
+      className="w-full border px-3 py-2 h-[45px] rounded-[15px]"
       required
     />
   </div>
@@ -69,7 +69,7 @@ function Signup() {
       id="phone"
       name="phone"
       placeholder="Phone Number"
-      className="w-full border px-3 py-2 h-[50px] rounded-[15px]"
+      className="w-full border px-3 py-2 h-[45px] rounded-[15px]"
       required
     />
   </div>
@@ -81,7 +81,7 @@ function Signup() {
       id="password"
       name="password"
       placeholder="Enter Password"
-      className="w-full border px-3 py-2 h-[50px] rounded-[15px]"
+      className="w-full border px-3 py-2 h-[45px] rounded-[15px]"
       required
     />
   </div>
@@ -93,7 +93,7 @@ function Signup() {
       id="retypePassword"
       name="retypePassword"
       placeholder="Retype Password"
-      className="w-full border px-3 py-2 h-[50px] rounded-[15px]"
+      className="w-full border px-3 py-2 h-[45px] rounded-[15px]"
       required
     />
   </div>
@@ -106,7 +106,7 @@ function Signup() {
       className="border h-[15px] w-[15px] rounded-[5px] pl-2"
       required
     />
-   <label htmlFor="">I agree to all terms and conditions</label>
+   <label htmlFor=""className='pr-2'>I agree to all terms and conditions</label>
 
   </div>
 

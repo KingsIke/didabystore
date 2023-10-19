@@ -97,8 +97,10 @@ function signup() {
           <button 
             type="submit"
             className="googleButton w-[463px] h-[60px] bg-[#87C505] py-1  hover:bg-[#87C505] "
-          >
+          > <Link to='/home'>
+
             Sign In 
+          </Link>
           </button>
           <p className="cursor-pointer signUpP ">
               <Link to="/signup">Don’t have an account? <span>Sign Up

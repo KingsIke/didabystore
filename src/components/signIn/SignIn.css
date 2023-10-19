@@ -73,7 +73,7 @@ line-height: normal;
     font-size: 18px;
     font-style: normal;
     font-weight: 400;
-    line-height: normal;
+    /* line-height:; */
     /* text-align: right; */
     margin-left: 340px;
     text-wrap: nowrap ;

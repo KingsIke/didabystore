@@ -2,16 +2,18 @@ import './App.css';
 import React from 'react';
 import Signup from './components/signUp/signup'
 import Signin from './components/signIn/signin'
-import Footer from './components/footer/footer'
-import MultiColumnLayout from './components/testing/test'
+import Footer from './components/footer/FooterD'
+import MultiColumnLayout from './components/Nav/Arrival/NewArrivals'
 import Card from './components/Body/computer'
 import Search from './components/Nav/Searchbar/searchbar'
+import Search1 from './components/Nav/NavKids/NavKids'
+
 
 
 
 
 import { Routes, BrowserRouter as Router, Route } from 'react-router-dom'
-import NavBar from './components/Nav/ImageNav/ImageNav';
+import NavBar from './components/Nav/DropNav/DropNav';
 function App() {
   return (
     < React.Fragment >
@@ -19,7 +21,7 @@ function App() {
       <div className="App">
         {/* <Navbar /> */}
 
-        <div className="content">
+        <div className="content ml-[20px] mr-5">
           <Routes>
             <Route path='/signup' element={< Signup/>} />
             <Route path='/' element={< Signin/>} />
@@ -28,7 +30,9 @@ function App() {
             <Route path='/footer' element={< Footer/>} />
             <Route path='/test' element={< MultiColumnLayout/>} />
             <Route path='/board' element={< Card/>} />
-            <Route path='/search' element={< Search/>} />
+            <Route path='/home' element={< Search/>} />
+            <Route path='/h' element={< Search1/>} />
+
 
 
             {/* Dashboard */}
