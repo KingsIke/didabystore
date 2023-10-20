@@ -6,7 +6,9 @@ import Footer from './components/footer/FooterD'
 import MultiColumnLayout from './components/Nav/Arrival/NewArrivals'
 import Card from './components/Body/computer'
 import Search from './components/Nav/Searchbar/searchbar'
-import Search1 from './components/Nav/NavKids/NavKids'
+import Search1 from './components/Product/Fashion/Fashion'
+import See from './components/Product/NavProduct/NavPage'
+
 
 
 
@@ -32,6 +34,9 @@ function App() {
             <Route path='/board' element={< Card/>} />
             <Route path='/home' element={< Search/>} />
             <Route path='/h' element={< Search1/>} />
+            <Route path='/see' element={< See/>} />
+
+            See
 
 
 
