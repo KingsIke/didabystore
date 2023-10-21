@@ -13,20 +13,19 @@ const MultiColumnLayout = () => {
     <>
     <div className=''>
 
-    <SearchInput  />
+    {/* <SearchInput  />
     </div>
     <div className="flex w-[1512px]">
-     
-      {/* Left Sticky Column */}
+ 
       <div className=" top-0 h-screen w-[230px] bg-white px-4 py-2">
-        {/* Content for the sticky column */}
+    
       <Categories  />
       </div>
 
-      {/* Constrained Content */}
+      
       <div className="flex-1  w-[1040px]  overflow-x-hidden">
         <div className="mx-auto max-w-7xl pl-8 pt-2 pr-8 pb-8">
-          {/* Your content here */}
+        
           <Computer/>
           <Card  />
           <Onsales/>
@@ -53,7 +52,7 @@ const MultiColumnLayout = () => {
     </div>
 <div className='mt-2'>
 
-    <Footer />
+    <Footer /> */}
 </div>
 
     

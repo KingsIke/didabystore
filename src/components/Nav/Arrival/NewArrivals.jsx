@@ -11,7 +11,7 @@ const NewArrivals = () => {
 
 
 
-            <div className="newArrivals px-[5px] w-[100%] border-solid border-2 border-orange-400">
+            <div className="newArrivals px-[5px] w-[100%] border-solid border-2 border-orange-400 mt-1">
 
 
 

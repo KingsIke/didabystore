@@ -23,7 +23,7 @@ function App() {
       <div className="App">
         {/* <Navbar /> */}
 
-        <div className="content ml-[20px] mr-5">
+        <div className="">
           <Routes>
             <Route path='/signup' element={< Signup/>} />
             <Route path='/' element={< Signin/>} />
