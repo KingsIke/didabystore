@@ -5,9 +5,10 @@
     padding: 0;
 } */
 .centered{
-  
+/*   
    max-width: 1440px;
-   min-width:640px
+   min-width:640px */
+   width: auto;
 }
 .full-width-footer {
     width: 100%;

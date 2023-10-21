@@ -2,6 +2,9 @@
 
 .kidimage-container {
     position: relative;
+    overflow: hidden;
+    border: 1px solid greenyellow;
+    height: 220px;
 }
 
 .kidimage-container::before {
@@ -13,10 +16,19 @@
     height: 100%;
     background: rgba(34, 46, 12, 0.60);
     border-radius: 15px;
+    overflow: hidden;
+
 }
+
+.kidimage-container img{
+    width: stretch;
+}
+
 .kidImageBack{
     position:absolute;
 top: 50px;
+overflow: hidden;
+
 }
     .kidImagebtn{
     
@@ -51,7 +63,19 @@ top: 50px;
         font-size: 45px;
         font-style: normal;
         font-weight: 700;
-        
+        height: 150px;
+        border: 1px solid pink;
         
         } 
 
+        @media (max-width: 1024px) {
+            .kidImageBack{
+                margin-left: 300px;
+            }
+        }
+
+        @media (max-width: 768px) and (min-width: 320px) {
+            .kidImageBack{
+                margin-left: 150px;
+            }
+        }

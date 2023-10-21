@@ -10,7 +10,7 @@ export const NavBar = () => {
     return (
         <div className="NavContainer">
             <div className="">
-                <img className="w-100% max-w-[300px] pt" src={Dogo} alt="DidayLogo" />
+                <img className="w-100% max-w-[300px] " src={Dogo} alt="DidayLogo" />
             </div>
             <div className="NavHome text-[#868686] text-[18px] font-bold leading-normal">
                 <div className=" text-black"><h1>Home</h1></div>
@@ -25,7 +25,7 @@ export const NavBar = () => {
                         <TbMessage2 className="iconsNav" />
                     </span>
                 </div>
-                <div className="mr-6">
+                <div className="mr-5">
                     <span className="self-center text-xs font-bold whitespace-nowrap dark:text-white">
                         <BsPerson className="iconsNav" />
                     </span>

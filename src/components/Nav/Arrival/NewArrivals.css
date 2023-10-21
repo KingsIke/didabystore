@@ -1,7 +1,15 @@
 @import url('http://fonts.googleapis.com/css2?family=Mada&display=swap');
-
+.newArrivals{
+    width: 100%;
+    padding: 0, 5px;
+}
 .newPage{
     font-family: Mada;
+    height: 39px;
+    width: fit-content;
+    font-size: 30px;
+    color: #070707;
+    text-wrap: nowrap ;
 
 font-style: normal;
 font-weight: 700;
@@ -14,6 +22,8 @@ display: flex;
 flex-direction: row;
 justify-content: space-between;
 }
+
+
 
 .headerArrival{
     display: flex;
@@ -32,11 +42,17 @@ justify-content: space-between;
     font-weight: 700;
     line-height: normal;
     margin: 0;
+    padding-top: 8px;
 }
 
 .imageArrival{
 border: 1px solid green;
 position: relative;
+display: flex;
+justify-content: space-between;
+width: fit-content; 
+height: 210px;
+border-radius: 12px;
 }
 .imageSpan{
     position: absolute;
@@ -46,6 +62,8 @@ position: relative;
     border-radius: 50%;
     width: 25px;
     height: 25px;
+    font-size: 20px;
+    padding: 6px;
 }
 .titleP{
     color: #333;
@@ -66,4 +84,10 @@ line-height: normal;
 }
 .priceTitle{
     white-space: nowrap;
+}
+
+@media (max-width: 768px) and (min-width: 320px) {
+    .arrivalContainer div{
+        width:160px ;
+    }
 }

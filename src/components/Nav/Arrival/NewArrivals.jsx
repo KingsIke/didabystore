@@ -11,7 +11,7 @@ const NewArrivals = () => {
 
 
 
-            <div className="newArrivals px-[5px] w-[100%] border-solid border-2 border-orange-400 mt-1">
+            <div className="newArrivals border-solid border-2 border-orange-400 mt-1">
 
 
 
@@ -19,8 +19,8 @@ const NewArrivals = () => {
 
                 <div className="headerArrival ">
 
-                    <p className=" newPage h-[39px] w-[167px] text-[#070707] text-[30px]">New Arrivals</p>
-                    <p className="viewArrival pt-2">View all</p>
+                    <p className=" newPage ">New Arrivals</p>
+                    <p className="viewArrival">View all</p>
                 </div>
 
                 <div className="arrivalContainer mt-3">
@@ -28,14 +28,13 @@ const NewArrivals = () => {
 
 
 
-                    <div className="  w-[212px] border-solid border-2 border-blue-400">
+                    <div className="   border-solid border-2 border-blue-400">
 
 
-                        {/* <div className="card relative rounded bg-white w-fit shadow transition duration-300 hover:shadow-lg ml-3 px-2 "> */}
-                        <div className="imageArrival flex justify-between w-[210px] h-[210px] rounded-[12px]">
+                        <div className="imageArrival ">
 
                             <span>
-                                <AiFillHeart class="imageSpan text-[20px] text-[#C10909] p-[6px] m-0 " />
+                                <AiFillHeart class="imageSpan text-[#C10909]  " />
                             </span>
                             <img src={Cloth} alt="Avatar" className=" rounded-[12px] " />
                         </div>
@@ -52,11 +51,10 @@ const NewArrivals = () => {
 
                     </div>
 
-                    <div className="  w-[212px] border-solid border-2 border-blue-400">
+                    <div className="   border-solid border-2 border-blue-400">
 
 
-                        {/* <div className="card relative rounded bg-white w-fit shadow transition duration-300 hover:shadow-lg ml-3 px-2 "> */}
-                        <div className="imageArrival flex justify-between w-[210px] h-[210px] rounded-[12px]">
+                        <div className="imageArrival ">
 
                             <span>
                                 <AiOutlineHeart class="imageSpan text-[20px] text-black p-[6px] m-0 " />
@@ -76,14 +74,11 @@ const NewArrivals = () => {
 
                     </div>
 
-                    <div className="  w-[212px] border-solid border-2 border-blue-400">
-
-
-                        {/* <div className="card relative rounded bg-white w-fit shadow transition duration-300 hover:shadow-lg ml-3 px-2 "> */}
-                        <div className="imageArrival flex justify-between w-[210px] h-[210px] rounded-[12px]">
+                    <div className="   border-solid border-2 border-blue-400">
+                        <div className="imageArrival">
 
                             <span>
-                                <AiOutlineHeart class="imageSpan text-[20px] text-black p-[6px] m-0 " />
+                                <AiOutlineHeart class="imageSpan " />
                             </span>
                             <img src={Cloth} alt="Avatar" className=" rounded-[12px] " />
                         </div>
@@ -100,14 +95,13 @@ const NewArrivals = () => {
 
                     </div>
 
-                    <div className="  w-[212px] border-solid border-2 border-blue-400">
+                    <div className="   border-solid border-2 border-blue-400">
 
 
-                        {/* <div className="card relative rounded bg-white w-fit shadow transition duration-300 hover:shadow-lg ml-3 px-2 "> */}
-                        <div className="imageArrival flex justify-between w-[210px] h-[210px] rounded-[12px]">
+                        <div className="imageArrival ">
 
                             <span>
-                                <AiOutlineHeart class="imageSpan text-[20px] text-black p-[6px] m-0 " />
+                                <AiOutlineHeart class="imageSpan  " />
                             </span>
                             <img src={Cloth} alt="Avatar" className=" rounded-[12px] " />
                         </div>
@@ -130,11 +124,11 @@ const NewArrivals = () => {
 
 
 
-            <div className="newArrivals px-[5px] w-[100%] border-solid border-2 border-orange-400">
+            <div className="newArrivals border-solid border-2 border-orange-400">
                 <div className="headerArrival ">
 
-                    <p className=" newPage h-[39px] w-[167px] text-[#070707] text-[30px]">Best Sellers</p>
-                    <p className="viewArrival pt-2">View all</p>
+                    <p className=" newPage ">Best Sellers</p>
+                    <p className="viewArrival ">View all</p>
                 </div>
 
                 <div className="arrivalContainer mt-3">
@@ -142,11 +136,11 @@ const NewArrivals = () => {
 
 
 
-                    <div className="  w-[212px] border-solid border-2 border-blue-400">
+                    <div className="   border-solid border-2 border-blue-400">
 
 
-                        {/* <div className="card relative rounded bg-white w-fit shadow transition duration-300 hover:shadow-lg ml-3 px-2 "> */}
-                        <div className="imageArrival flex justify-between w-[210px] h-[210px] rounded-[12px]">
+
+                        <div className="imageArrival ">
 
                             <span>
                                 <AiOutlineHeart class="imageSpan text-[20px] text-black p-[6px] m-0 " />
@@ -166,14 +160,12 @@ const NewArrivals = () => {
 
                     </div>
 
-                    <div className="  w-[212px] border-solid border-2 border-blue-400">
+                    <div className="   border-solid border-2 border-blue-400">
 
-
-                        {/* <div className="card relative rounded bg-white w-fit shadow transition duration-300 hover:shadow-lg ml-3 px-2 "> */}
-                        <div className="imageArrival flex justify-between w-[210px] h-[210px] rounded-[12px]">
+                        <div className="imageArrival ]">
 
                             <span>
-                                <AiOutlineHeart class="imageSpan text-[20px] text-black p-[6px] m-0 " />
+                                <AiOutlineHeart class="imageSpan  " />
                             </span>
                             <img src={Shoe} alt="Avatar" className=" rounded-[12px] " />
                         </div>
@@ -190,11 +182,9 @@ const NewArrivals = () => {
 
                     </div>
 
-                    <div className="  w-[212px] border-solid border-2 border-blue-400">
+                    <div className="   border-solid border-2 border-blue-400">
 
-
-                        {/* <div className="card relative rounded bg-white w-fit shadow transition duration-300 hover:shadow-lg ml-3 px-2 "> */}
-                        <div className="imageArrival flex justify-between w-[210px] h-[210px] rounded-[12px]">
+                        <div className="imageArrival">
 
                             <span>
                                 <AiOutlineHeart class="imageSpan text-[20px] text-black p-[6px] m-0 " />
@@ -214,14 +204,11 @@ const NewArrivals = () => {
 
                     </div>
 
-                    <div className="  w-[212px] border-solid border-2 border-blue-400">
-
-
-                        {/* <div className="card relative rounded bg-white w-fit shadow transition duration-300 hover:shadow-lg ml-3 px-2 "> */}
-                        <div className="imageArrival flex justify-between w-[210px] h-[210px] rounded-[12px]">
+                    <div className="   border-solid border-2 border-blue-400">
+                        <div className="imageArrival ">
 
                             <span>
-                                <AiOutlineHeart class="imageSpan text-[20px] text-black p-[6px] m-0 " />
+                                <AiOutlineHeart class="imageSpan  " />
                             </span>
                             <img src={Shoe} alt="Avatar" className=" rounded-[12px] " />
                         </div>
@@ -250,7 +237,6 @@ const NewArrivals = () => {
                     <div className="  w-[212px] border-solid border-2 border-blue-400">
 
 
-                        {/* <div className="card relative rounded bg-white w-fit shadow transition duration-300 hover:shadow-lg ml-3 px-2 "> */}
                         <div className="imageArrival flex justify-between w-[210px] h-[210px] rounded-[12px]">
 
                             <span>
@@ -273,8 +259,6 @@ const NewArrivals = () => {
 
                     <div className="  w-[212px] border-solid border-2 border-blue-400">
 
-
-                        {/* <div className="card relative rounded bg-white w-fit shadow transition duration-300 hover:shadow-lg ml-3 px-2 "> */}
                         <div className="imageArrival flex justify-between w-[210px] h-[210px] rounded-[12px]">
 
                             <span>
@@ -298,7 +282,6 @@ const NewArrivals = () => {
                     <div className="  w-[212px] border-solid border-2 border-blue-400">
 
 
-                        {/* <div className="card relative rounded bg-white w-fit shadow transition duration-300 hover:shadow-lg ml-3 px-2 "> */}
                         <div className="imageArrival flex justify-between w-[210px] h-[210px] rounded-[12px]">
 
                             <span>
@@ -322,7 +305,6 @@ const NewArrivals = () => {
                     <div className="  w-[212px] border-solid border-2 border-blue-400">
 
 
-                        {/* <div className="card relative rounded bg-white w-fit shadow transition duration-300 hover:shadow-lg ml-3 px-2 "> */}
                         <div className="imageArrival flex justify-between w-[210px] h-[210px] rounded-[12px]">
 
                             <span>
