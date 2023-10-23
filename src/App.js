@@ -3,7 +3,7 @@ import React from 'react';
 import Signup from './components/signUp/signup'
 import Signin from './components/signIn/signin'
 import Footer from './components/footer/FooterD'
-import MultiColumnLayout from './components/Nav/Arrival/NewArrivals'
+import MultiColumnLayout from './components/Category/Category'
 import Card from './components/Body/computer'
 import Search from './components/Nav/Searchbar/searchbar'
 import Search1 from './components/Product/Fashion/Fashion'

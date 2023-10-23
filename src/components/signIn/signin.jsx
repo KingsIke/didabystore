@@ -68,7 +68,7 @@ function signup() {
               name="email"
               placeholder="Email Address"
               className="w-full border px-3 py-2 h-[60px] rounded-[15px]"
-              required />
+               />
           </div>
 
           <div className="mb-4">
@@ -79,7 +79,7 @@ function signup() {
               name="password"
               placeholder="Enter Password"
               className="w-full border px-3 py-2  h-[60px]  rounded-[15px]"
-              required />
+              />
           </div>
 
           <div className="flex justify-between items-center pr-2 mb-4 text-xs">
