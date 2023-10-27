@@ -18,12 +18,12 @@ const NavKids = () => {
 
     return (
         <div className='w-full border-collapse mt-10'>
-            <div className='kidimage-container'>
+            <div className='kidimage-container overflow-hidden'>
                 <img className="rounded-[15px] h-[220px] " src={Dogo} alt="DidayLogo" />
-                <div className='kidImageBack  w-[510px] flex-col justify-center items-center   '>
-                    <p className=' text-white text-[38px] font-bold  text-center  text-3xl whitespace-nowrap '>Show your Kids all the love they deserve <br /> <span className='break-normal'>
+                <div className='kidImageBack overflow-hidden  w-[510px] flex-col justify-center items-center   '>
+                    <p className='overflow-hidden text-white text-[38px] font-bold  text-center  text-3xl whitespace-nowrap '>Show your Kids all the love they deserve <br /> <span className='break-normal'>
                         when you shop for them </span></p>
-                    <div className='kidposIma mt-1 text-center '>
+                    <div className='kidposIma overflow-hidden mt-1 text-center '>
                         <button className='Imagebtn'>Buy Now</button>
                     </div>
                 </div>

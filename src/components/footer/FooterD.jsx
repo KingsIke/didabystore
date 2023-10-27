@@ -64,15 +64,15 @@ const FooterD = () => {
                         </div>
                         <div className='text-white  '>
                             <p className='whitespace-nowrap pagingD text-zinc-100 text-[14px]  tracking-normal'>Get update on our latest deals and discount by subscribing to our newsletter</p>
-                            <div className=' footerinput relative mt-5'>
+                            <div className=' footerinput relative mt-5 overflow-hidden'>
                                 <input
                                     type="text"
                                     name=""
                                     id=""
-                                    className="w-[417px] h-[45px] bg-zinc-100 rounded-[10px] rounded-r-lg"
+                                    className="w-[417px] h-[45px] bg-zinc-100 rounded-[10px] rounded-r-lg overflow-hidden"
                                 />
                                 <button
-                                    className="absolute right-0 top-0 h-[46px] bg-lime-500 rounded-[10px] px-4  text-zinc-950 text-lg font-semibold m-0"
+                                    className="absolute right-0 top-0 h-[46px] bg-lime-500 rounded-[10px] px-4  text-zinc-950 text-lg font-semibold m-0 overflow-hidden"
 
                                 >
                                     Subscribe
