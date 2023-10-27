@@ -80,7 +80,7 @@ align-items: center;
         
         } 
 
-        @media (max-width: 1024px) and (min-width: 768px) {c
+        @media (max-width: 1024px) and (min-width: 768px) {
            
             .ImageBack{
                 position:absolute;

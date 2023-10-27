@@ -1,0 +1,45 @@
+/* Category.css */
+
+.category-dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  select {
+    width: 280px;
+    height: 40px;
+    border: 2px solid #FFA500;
+  }
+  
+  .subcategories {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 200px;
+    background: #fff;
+    border: 1px solid #ccc;
+    border-left: none;
+    border-top: none;
+    z-index: 1;
+  }
+  
+  .subcategories.active {
+    display: block;
+  }
+  
+  .subcategory {
+    padding: 8px;
+    border-bottom: 1px solid #ccc;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .subcategory:last-child {
+    border-bottom: none;
+  }
+  
+  .subcategory:hover {
+    background: #f0f0f0;
+  }
+  

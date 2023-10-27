@@ -2,6 +2,7 @@
 
 .product-container {
     position: relative;
+    overflow: hidden;
 }
 
 .product-container::before {
@@ -18,6 +19,8 @@
     position:absolute;
     top: 40px;
     margin-left: 200px;
+    overflow: hidden;
+
 }
 
     
@@ -43,5 +46,12 @@
     
 
 .productposIma{
+
+}
+@media (max-width: 1024px) and (min-width: 768px) {
+  .product-container {
+    position: relative;
+    overflow: hidden;
+}
 
 }
