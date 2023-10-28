@@ -1,0 +1,46 @@
+@import url('http://fonts.googleapis.com/css2?family=Mada&display=swap');
+
+.product-container {
+    position: relative;
+    overflow: hidden;
+}
+
+.product-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(34, 46, 12, 0.60);
+    border-radius: 15px;
+}
+.arrivalImageBack{
+    position:absolute;
+    top: 40px;
+    left: 200px;
+    margin-left: 200px;
+    overflow: hidden;
+
+}
+
+    
+
+
+
+
+    
+
+
+@media (max-width: 1024px) and (min-width: 768px) {
+  .product-container {
+    position: relative;
+    overflow: hidden;
+}
+.arrivalImageBack{
+   
+    left: 1px;
+   
+
+}
+}

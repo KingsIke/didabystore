@@ -22,7 +22,7 @@ export const NavBar = () => {
               <Link to="/product">Product</Link>
 
                 </div>
-                <div className="">New Arrivals</div>
+                <div className=""><Link to="/arrival">New Arrivals</Link></div>
 
 
             </div>
@@ -37,7 +37,7 @@ export const NavBar = () => {
                         <BsPerson className="iconsNav" />
                     </span>
                 </div>
-                <div className="">
+                <div className="pr-1">
                     <span className="self-center text-xs font-bold whitespace-nowrap dark:text-white">
                         <AiOutlineHeart className="iconsNav" />
                     </span>

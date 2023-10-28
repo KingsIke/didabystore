@@ -10,6 +10,8 @@ import Search1 from './components/Product/Fashion/Fashion'
 import See from './components/Category/Category'
 import Cat from './components/Category/Testing'
 import Product from './components/Product/All/All'
+import Arrival from './components/NewArrival/Arrival'
+
 import Fashion from './components/Product/ProductBody/ProductBody'
 import Beauty from './components/Product/Beauty/Beauty'
 import Phone from './components/Product/Phone/Phone-Tab'
@@ -64,6 +66,8 @@ function App() {
             <Route path='/groceries' element={< Groceries/>} />
             <Route path='/health' element={< Health/>} />
             <Route path='/appliance' element={< Appliance/>} />
+            <Route path='/arrival' element={< Arrival/>} />
+
 
 
 
