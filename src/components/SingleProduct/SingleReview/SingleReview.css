@@ -1,0 +1,38 @@
+.SingleContainer{
+    display: flex;
+    width: full;
+    height: 470px;
+    border: 2px solid red;
+    overflow: hidden;
+
+
+}
+
+
+.pixGallery{
+    border: 2px solid greenyellow;
+    width: 170px;
+    margin-right: 30px;
+    
+}
+
+.pixGallery img{
+    /* width: 165px;
+    height: 135px; */
+}
+
+.singlePix{
+    border: 2px solid yellow;
+    width: 520px;
+    margin-right: 30px;
+
+
+}
+.singleReview{
+    /* border: 2px solid blue; */
+    width: 500px;
+    overflow: hidden;
+
+
+
+}

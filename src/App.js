@@ -7,10 +7,14 @@ import MultiColumnLayout from './components/Category/Category'
 import Card from './components/Body/computer'
 import Search from './components/Nav/Searchbar/searchbar'
 import Search1 from './components/Product/Fashion/Fashion'
-import See from './components/Category/Category'
+import See from './components/SingleProduct/SingleLikes/SingleLikes'
 import Cat from './components/Category/Testing'
 import Product from './components/Product/All/All'
 import Arrival from './components/NewArrival/Arrival'
+import Clothing from './components/Fashion/Clothing/Clothing'
+import Bag from './components/Fashion/Bag/Bag'
+
+
 
 import Fashion from './components/Product/ProductBody/ProductBody'
 import Beauty from './components/Product/Beauty/Beauty'
@@ -81,7 +85,11 @@ function App() {
 
 
 
-          
+            
+            <Route path='/clothing' element={< Clothing/>} />
+            <Route path='/bags' element={< Bag/>} />
+
+
             <Route path='/nav' element={< NavBar/>} />
 
             <Route path='/footer' element={< Footer/>} />

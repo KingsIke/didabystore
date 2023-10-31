@@ -353,12 +353,112 @@
 
 
 
+// import React, { useState } from 'react';
+// import { IoIosArrowDown } from 'react-icons/io';
+// import './Category.css'
+// export default function App() {
+//   const [showMenu, setShowMenu] = useState(false);
+//   const [showSubMenu, setShowSubMenu] = useState(false);
+//   const [selectedItem, setSelectedItem] = useState(null);
+
+//   const toggleSubMenu = () => {
+//     setShowMenu(!showMenu);
+//   };
+
+//   const handleOptionHover = (item) => {
+//     setSelectedItem(item);
+//     setShowSubMenu(true);
+//   };
+
+//   const handleOptionLeave = () => {
+//     setShowSubMenu(false);
+//   };
+
+//   const categories = [
+//     {
+//       name: 'Fashion',
+//       items: ['Clothing', 'Bag', 'Shoe', 'Watch', 'Jewelry', 'Wedding', 'Accessory'],
+//     },
+//     {
+//       name: 'Phones/Tablets',
+//       items: ['Mobile Phones', 'Tablets', 'Smart Watch', 'Phone Accessories'],
+//     },
+//     {
+//       name: 'Beauty',
+//       items: ['Skincare', 'Makeup', 'Beth and Body', 'Fragrance', 'Hair'],
+//     },
+//     {
+//       name: 'Groceries',
+//       items: ['Food', 'Cereal & Beverage', ' Drinks', 'Biscuit & Sweet', 'Household Cleaning'],
+//     },
+//     {
+//       name: 'Electronics',
+//       items: ['Tvs', 'Home Appliances', 'Generating Sat', 'Camera & Photos'],
+//     }, {
+//       name: 'Laptops & Computers',
+//       items: ['Skincare', 'Makeup', 'Beth and Body', 'Fragrance', 'Hair'],
+//     }, {
+//       name: 'Health & Fitness',
+//       items: ['Gym Equipment', 'Supplement',  'Gym ware'],
+//     }, {
+//       name: 'Babies & Kids',
+//       items: ['Baby Cloth', 'Children Cloth', 'Toys', 'Baby & Childcare', 'Maternity & pregnancy'],
+//     }, {
+//       name: 'Appliances',
+//       items: ['Home Appliance', 'Furniture', 'Office Appliance', 'Kitchenware and Cookware'],
+//     },
+
+//   ];
+
+//   return (
+//     <>
+//       <div className='' onClick={toggleSubMenu}>
+//         <div className='cursor-pointer flex justify-between w-[330px] h-[40px] rounded-[15px] border border-stone-300 text-center'>
+//           <h1 className=' text-zinc-500 text-center pl-3 pt-1'>Category</h1>
+//           <p className='py-2 pr-3'>
+//             <IoIosArrowDown />
+//           </p>
+//         </div>
+//         <div>
+//           {showMenu && (
+//             <div className='menuDiv '>
+//               <ul  className='unlistMenu'>
+//                 {categories.map((category, index) => (
+//                   <li className=' listedMenu'
+//                     key={index}
+//                     onMouseEnter={() => handleOptionHover(category)}
+//                     onMouseLeave={handleOptionLeave}
+//                   >
+//                     {category.name}
+//                   </li>
+//                 ))}
+//               </ul>
+//               {showSubMenu && selectedItem && (
+//                 <div className=''>
+//                   <ul className='unlistedSub'>
+//                     {selectedItem.items.map((item, index) => (
+//                       <li key={index} className='listedSubMenu'>{item}</li>
+//                     ))}
+//                   </ul>
+//                 </div>
+//               )}
+//             </div>
+//           )}
+//         </div>
+//       </div>
+//     </>
+//   );
+// }
+
+
 import React, { useState } from 'react';
 import { IoIosArrowDown } from 'react-icons/io';
+import './Category.css';
+
+import { Link } from 'react-router-dom';
 
 export default function App() {
   const [showMenu, setShowMenu] = useState(false);
-  const [showSubMenu, setShowSubMenu] = useState(false);
   const [selectedItem, setSelectedItem] = useState(null);
 
   const toggleSubMenu = () => {
@@ -367,22 +467,46 @@ export default function App() {
 
   const handleOptionHover = (item) => {
     setSelectedItem(item);
-    setShowSubMenu(true);
   };
 
   const handleOptionLeave = () => {
-    setShowSubMenu(false);
+    setSelectedItem(null);
   };
 
   const categories = [
     {
-      name: 'Item 1',
-      items: ['chair', 'table'],
+      name: 'Fashion',
+      items: ['Clothing', 'Bag', 'Shoe', 'Watch', 'Jewelry', 'Wedding', 'Accessory'],
     },
     {
-      name: 'Item 2',
-      items: ['cup', 'spoon', 'pot'],
+      name: 'Phones/Tablets',
+      items: ['Mobile Phones', 'Tablets', 'Smart Watch', 'Phone Accessories'],
     },
+    {
+            name: 'Beauty',
+            items: ['Skincare', 'Makeup', 'Beth and Body', 'Fragrance', 'Hair'],
+          },
+          {
+            name: 'Groceries',
+            items: ['Food', 'Cereal & Beverage', ' Drinks', 'Biscuit & Sweet', 'Household Cleaning'],
+          },
+          {
+            name: 'Electronics',
+            items: ['Tvs', 'Home Appliances', 'Generating Sat', 'Camera & Photos'],
+          }, {
+            name: 'Laptops & Computers',
+            items: ['Skincare', 'Makeup', 'Beth and Body', 'Fragrance', 'Hair'],
+          }, {
+            name: 'Health & Fitness',
+            items: ['Gym Equipment', 'Supplement',  'Gym ware'],
+          }, {
+            name: 'Babies & Kids',
+            items: ['Baby Cloth', 'Children Cloth', 'Toys', 'Baby & Childcare', 'Maternity & pregnancy'],
+          }, {
+            name: 'Appliances',
+            items: ['Home Appliance', 'Furniture', 'Office Appliance', 'Kitchenware and Cookware'],
+          },
+    // Add more categories here
   ];
 
   return (
@@ -396,23 +520,25 @@ export default function App() {
         </div>
         <div>
           {showMenu && (
-            <div className='flex cursor-pointer mt-8 border border-orange-300 rounded  '>
-              <ul  className='w-[330px] border border-blue-300 rounded'>
+            <div className='menuDiv'>
+              <ul className='unlistMenu'>
                 {categories.map((category, index) => (
-                  <li className='mt-3'
+                  <li className='listedMenu'
                     key={index}
                     onMouseEnter={() => handleOptionHover(category)}
-                    onMouseLeave={handleOptionLeave}
                   >
                     {category.name}
                   </li>
                 ))}
               </ul>
-              {showSubMenu && selectedItem && (
-                <div className=' mx-4'>
-                  <ul>
+              {selectedItem && (
+                <div className=''>
+                  <ul className='unlistedSub'>
                     {selectedItem.items.map((item, index) => (
-                      <li key={index}>{item}</li>
+                      <li key={index} className='listedSubMenu'>
+                       
+                        <Link to={`/product/${item.toLowerCase()}`}>{item}</Link>
+                        </li>
                     ))}
                   </ul>
                 </div>

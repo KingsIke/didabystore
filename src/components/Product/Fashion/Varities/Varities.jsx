@@ -1,5 +1,6 @@
 // import React from 'react'
 import React from "react";
+import { Link } from "react-router-dom";
 import Cloth from '../../../../images/productCloth.png'
 
 import { AiOutlineHeart } from "react-icons/ai";
@@ -15,7 +16,7 @@ const Varities = () => {
     <div className="headerArrivalVar ">
 
         <p className=" newPageVar ">Clothing</p>
-        <p className="Var">View all</p>
+        <p className="Var"><Link to="/clothing">View all</Link></p>
     </div>
            <div className="arrivalContainerVar mt-3">
 

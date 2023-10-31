@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from "react-router-dom";
 
 import Cloth from '../../../../images/productBag.png'
 import './Varities.css'
@@ -15,7 +16,7 @@ const Bag = () => {
     <div className="headerArrivalVar ">
 
         <p className=" newPageVar ">Bags</p>
-        <p className="Var">View all</p>
+        <p className="Var"> <Link to="/bags">View all</Link></p>
     </div>
     <div className="arrivalContainerVar mt-3">
 
