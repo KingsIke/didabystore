@@ -4,6 +4,8 @@ import Signup from './components/signUp/signup'
 import Signin from './components/signIn/signin'
 import Footer from './components/footer/FooterD'
 import MultiColumnLayout from './components/Category/Category'
+import AccountProfile from './components/AccountSetting/UpdateProfile/UpdateProfile'
+import PasswordUpdate from './components/AccountSetting/Password/Password'
 import Card from './components/Body/computer'
 import Search from './components/Nav/Searchbar/searchbar'
 import Search1 from './components/Product/Fashion/Fashion'
@@ -88,6 +90,12 @@ function App() {
             
             <Route path='/clothing' element={< Clothing/>} />
             <Route path='/bags' element={< Bag/>} />
+            <Route path='/profile' element={< AccountProfile/>} />
+            <Route path='/password' element={< PasswordUpdate/>} />
+
+
+
+
 
 
             <Route path='/nav' element={< NavBar/>} />

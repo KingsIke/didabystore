@@ -33,9 +33,12 @@ export const NavBar = () => {
                     </span>
                 </div>
                 <div className="mr-5">
+                    
+              <Link to="/profile">
                     <span className="self-center text-xs font-bold whitespace-nowrap dark:text-white">
                         <BsPerson className="iconsNav" />
                     </span>
+                    </Link>
                 </div>
                 <div className="pr-1">
                     <span className="self-center text-xs font-bold whitespace-nowrap dark:text-white">

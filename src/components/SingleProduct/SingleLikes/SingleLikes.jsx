@@ -151,6 +151,14 @@ const SingleLikes = () => {
             </div>
 
         </div>
+
+{/* 
+        <div>
+            <span>0</span>
+            <input type="range" min={10}  max={100}/>
+            <span>100</span>
+        </div> */}
+
         <FooterD />
         </>
 
