@@ -16,10 +16,11 @@ const UpdateProfile = () => {
 
 
   return (
-    <div>
+    <div className='h-[600px]'>
+
         <NavBar />
 
-        <div className='overflow-hidden  shadow max-w-[600px] h-[435px] bg-white rounded-[15px] mx-auto my-[20px] shadow-4 shadow-y-10 shadow-blur-10 shadow-spread-10 shadow-black'>
+        <div className='overflow-hidden  shadow max-w-[600px] h-[435px] bg-white rounded-[15px] mx-auto mt-[40px] shadow-4 shadow-y-10 shadow-blur-10 shadow-spread-10 shadow-black'>
 
             <div className='flex overflow-hidden'>
                     <div className=' overflow-hidden w-[200px] h-[435px] border border-stone-400 rounded-l-lg '>
@@ -97,6 +98,7 @@ const UpdateProfile = () => {
         </span>
       </div>
     </div>
+    
  
 
 
@@ -112,12 +114,15 @@ const UpdateProfile = () => {
 </button>
 
 
+
+
   {/* <p className="cursor-pointer signUpP">
     <Link to="/">
     Already have an account?  <span>Sign In</span>
     </Link>
   </p> */}
 </form> 
+
 
                     </div>
             </div>

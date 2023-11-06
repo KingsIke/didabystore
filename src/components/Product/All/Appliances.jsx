@@ -30,7 +30,7 @@ const Appliances  = () => {
     <div className="imageArrivalVar ">
 
         <span>
-            <AiOutlineHeart class="imageSpanVar text-black  " />
+            <AiOutlineHeart className="imageSpanVar text-black  " />
         </span>
         <img src={Cloth} alt="Avatar" className=" rounded-[12px] " />
     </div>
@@ -52,7 +52,7 @@ const Appliances  = () => {
     <div className="imageArrivalVar ">
 
         <span>
-            <AiOutlineHeart class="imageSpanVar text-black  " />
+            <AiOutlineHeart className="imageSpanVar text-black  " />
         </span>
         <img src={Cloth} alt="Avatar" className=" rounded-[12px] " />
     </div>
@@ -74,7 +74,7 @@ const Appliances  = () => {
     <div className="imageArrivalVar ">
 
         <span>
-            <AiOutlineHeart class="imageSpanVar text-black  " />
+            <AiOutlineHeart className="imageSpanVar text-black  " />
         </span>
         <img src={Cloth} alt="Avatar" className=" rounded-[12px] " />
     </div>
@@ -96,7 +96,7 @@ const Appliances  = () => {
     <div className="imageArrivalVar ">
 
         <span>
-            <AiOutlineHeart class="imageSpanVar text-black  " />
+            <AiOutlineHeart className="imageSpanVar text-black  " />
         </span>
         <img src={Cloth} alt="Avatar" className=" rounded-[12px] " />
     </div>

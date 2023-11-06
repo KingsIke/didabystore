@@ -1,100 +1,93 @@
-/* 
+/* Initial styles for all screen sizes */
 
-.category-dropdown {
-    position: relative;
-    display: inline-block;
-  }
-  
-  select {
-    width: 280px;
-    height: 40px;
-    border: 2px solid #FFA500;
-  }
-  
-  .subcategories {
-    display: none;
-    position: absolute;
-    top: 0;
-    left: 100%;
-    width: 200px;
-    background: #fff;
-    border: 1px solid #ccc;
-    border-left: none;
-    border-top: none;
-    z-index: 1;
-  }
-  
-  .subcategories.active {
-    display: block;
-  }
-  
-  .subcategory {
-    padding: 8px;
-    border-bottom: 1px solid #ccc;
-    cursor: pointer;
-    transition: background 0.3s;
-  }
-  
-  .subcategory:last-child {
-    border-bottom: none;
-  }
-  
-  .subcategory:hover {
-    background: #f0f0f0;
-  }
-   */
+.menuDiv1 {
+  display: flex;
+  margin-top: 12px;
+  border: 2px solid orange;
+  /* border-radius: 15px; */
+  position: relative;
+  padding-top: 18px;
+}
 
-   /* .CategoryBox{
-    border: 10px solid #141414 ;
-    width: 380px;
-    height: 50px;
-   } */
-   .menuDiv{
-    /* flex cursor-pointer mt-8 border border-orange-300 rounded  */
-    display: flex;
-    margin-top:18px;
-    border: 2px solid orange;
-border-radius: 15px;
-
-   }
-.unlistMenu{
+.unlistMenu {
   width: 330px;
   border: 2px solid blue;
-  border-radius: 12px;
-
+  /* border-radius: 12px; */
+  
 }
-   .listedMenu{
-    border: 2px dashed brown;
-    height: 35px;
-    transition: .5s ease;
-    margin-bottom: 8px;
 
-   }
-   .listedMenu:hover{
-    background-color: #87C505;
-   }
+.listedMenu {
+  border: 2px dashed brown;
+  height: 35px;
+  transition: 0.5s ease;
+  margin-bottom: 8px;
+}
 
+.listedMenu:hover {
+  background-color: #87C505;
+}
 
-   .unlistedSub{
-    width: 380px;
-    border: 2px dashed yellow;
+.unlistedSub {
+  width: 380px;
+  border: 2px dashed yellow;
+}
 
-   }
-
-
-   .listedSubMenu{
-    border: 2px dashed blueviolet;
-    height: 35px;
-    padding-left: 5px;
-    margin-left: 30px;
-    transition: 1s ease;
-  border-radius: 12px;
+.listedSubMenu {
+  border: 2px dashed blueviolet;
+  height: 35px;
+  padding-left: 5px;
+  margin-left: 30px;
+  transition: 1s ease;
+  /* border-radius: 12px; */
   margin-bottom: 12px;
+}
+
+.listedSubMenu:hover {
+  background-color: #87C505;
+}
+
+/* Responsive styles for smaller screens */
+
+@media (max-width: 768px) {
+  .menuDiv {
+    flex-direction: column; /* Stack items vertically */
+  }
+
+  .unlistMenu {
+    width: 100%; /* Expand to full width */
+  }
+
+  .listedMenu {
+    width: 100%; /* Expand to full width */
+  }
+
+  .listedSubMenu {
+    width: 100%; /* Expand to full width */
+  }
+}
 
 
 
-   }
+.selectedItemOverlay {
+  position: absolute;
+  top: 0;
+  left: 100%; /* Position it to the right of the category dropdown */
+  background: white;
+  border: 1px solid #ccc;
+  padding: 10px;
+  z-index: 1; /* Ensure it appears on top of other content */
+}
 
-   .listedSubMenu:hover{
-    background-color: #87C505;
-   }
+.selectedItemOverlay ul {
+  list-style: none;
+  padding: 0;
+}
+
+.selectedItemOverlay li {
+  cursor: pointer;
+}
+
+/* Adjust the styles to match your design and layout preferences */
+
+
+

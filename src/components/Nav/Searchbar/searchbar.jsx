@@ -3,6 +3,7 @@ import { ImageNav } from '../ImageNav/ImageNav';
 import NewArrivals from '../Arrival/NewArrivals';
 import NavKids from '../NavKids/NavKids';
 import FooterD from '../../footer/FooterD';
+import Category from '../../Category/Category';
 
 
  const SearchInput = () => {
@@ -17,6 +18,7 @@ return (
 
 <NavBar />
 <ImageNav />
+<Category />
 <NewArrivals />
 <NavKids />
 

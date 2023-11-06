@@ -13,120 +13,120 @@ const Clothing = () => {
         <NavPage/>
 
         {/* PICTURE VIEWS  */}
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mt-8">
-  <div class="col-span-1 md:col-span-1 mb-4">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-8">
+  <div className="col-span-1 md:col-span-1 mb-4">
     <img
       src={Cloth}
-      class="w-[410px] h-[350px] shadow-lg rounded-lg mb-10"
+      className="w-[410px] h-[350px] shadow-lg rounded-lg mb-10"
       alt="Boat on Calm Water"
     />
 
     <img
       src={Cloth2}
-      class="w-[410px] h-[280px] shadow-lg rounded-lg mb-10"
+      className="w-[410px] h-[280px] shadow-lg rounded-lg mb-10"
       alt="Wintry Mountain Landscape"
     />
      <img
       src={Cloth1}
-      class="w-[410px] h-[490px]  shadow-lg rounded-lg "
+      className="w-[410px] h-[490px]  shadow-lg rounded-lg "
       alt="Mountains in the Clouds"
     />
   </div>
 
-  <div class="col-span-1 md:col-span-1 mb-4">
+  <div className="col-span-1 md:col-span-1 mb-4">
     <img
       src={Cloth1}
-      class="w-[410px]l h-[490px]  shadow-lg rounded-lg mb-10"
+      className="w-[410px]l h-[490px]  shadow-lg rounded-lg mb-10"
       alt="Mountains in the Clouds"
     />
 
     <img
       src={Cloth}
-      class="w-[410px] h-[350px] shadow-lg rounded-lg mb-10"
+      className="w-[410px] h-[350px] shadow-lg rounded-lg mb-10"
       alt="Boat on Calm Water"
     />
      <img
       src={Cloth2}
-      class="w-[410px]  h-[280px] shadow-lg rounded-lg "
+      className="w-[410px]  h-[280px] shadow-lg rounded-lg "
       alt="Waves at Sea"
     />
   </div>
 
-  <div class="col-span-1 md:col-span-1 mb-4">
+  <div className="col-span-1 md:col-span-1 mb-4">
     <img
       src={Cloth2}
-      class="w-[410px]  h-[280px] shadow-lg rounded-lg mb-10"
+      className="w-[410px]  h-[280px] shadow-lg rounded-lg mb-10"
       alt="Waves at Sea"
     />
 
     <img
       src={Cloth1}
-      class="w-[410px]  h-[490px] shadow-lg rounded-lg mb-10"
+      className="w-[410px]  h-[490px] shadow-lg rounded-lg mb-10"
       alt="Yosemite National Park"
     />
         <img
       src={Cloth}
-      class="w-[410px]  h-[350px] shadow-lg rounded-lg "
+      className="w-[410px]  h-[350px] shadow-lg rounded-lg "
       alt="Boat on Calm Water"
     />
   </div>
 </div>
 
 
-<div class="grid grid-cols-1 md:grid-cols-3 gap-4 mt-8">
-  <div class="col-span-1 md:col-span-1 mb-4">
+<div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-8">
+  <div className="col-span-1 md:col-span-1 mb-4">
     <img
       src={Cloth}
-      class="w-[410px] h-[350px] shadow-lg rounded-lg mb-10"
+      className="w-[410px] h-[350px] shadow-lg rounded-lg mb-10"
       alt="Boat on Calm Water"
     />
 
     <img
       src={Cloth2}
-      class="w-[410px] h-[280px] shadow-lg rounded-lg mb-10"
+      className="w-[410px] h-[280px] shadow-lg rounded-lg mb-10"
       alt="Wintry Mountain Landscape"
     />
      <img
       src={Cloth1}
-      class="w-[410px] h-[490px]  shadow-lg rounded-lg "
+      className="w-[410px] h-[490px]  shadow-lg rounded-lg "
       alt="Mountains in the Clouds"
     />
   </div>
 
-  <div class="col-span-1 md:col-span-1 mb-4">
+  <div className="col-span-1 md:col-span-1 mb-4">
     <img
       src={Cloth1}
-      class="w-[410px]l h-[490px]  shadow-lg rounded-lg mb-10"
+      className="w-[410px]l h-[490px]  shadow-lg rounded-lg mb-10"
       alt="Mountains in the Clouds"
     />
 
     <img
       src={Cloth}
-      class="w-[410px] h-[350px] shadow-lg rounded-lg mb-10"
+      className="w-[410px] h-[350px] shadow-lg rounded-lg mb-10"
       alt="Boat on Calm Water"
     />
      <img
       src={Cloth2}
-      class="w-[410px]  h-[280px] shadow-lg rounded-lg "
+      className="w-[410px]  h-[280px] shadow-lg rounded-lg "
       alt="Waves at Sea"
     />
   </div>
 
-  <div class="col-span-1 md:col-span-1 mb-4">
+  <div className="col-span-1 md:col-span-1 mb-4">
     <img
       src={Cloth2}
-      class="w-[410px]  h-[280px] shadow-lg rounded-lg mb-10"
+      className="w-[410px]  h-[280px] shadow-lg rounded-lg mb-10"
       alt="Waves at Sea"
     />
 
     <img
       src={Cloth1}
-      class="w-[410px]  h-[490px] shadow-lg rounded-lg mb-10"
+      className="w-[410px]  h-[490px] shadow-lg rounded-lg mb-10"
       alt="Yosemite National Park"
     />
         <img
       src={Cloth}
-      class="w-[410px]  h-[350px] shadow-lg rounded-lg "
+      className="w-[410px]  h-[350px] shadow-lg rounded-lg "
       alt="Boat on Calm Water"
     />
   </div>

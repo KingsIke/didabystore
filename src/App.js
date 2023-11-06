@@ -15,6 +15,7 @@ import Product from './components/Product/All/All'
 import Arrival from './components/NewArrival/Arrival'
 import Clothing from './components/Fashion/Clothing/Clothing'
 import Bag from './components/Fashion/Bag/Bag'
+import Sell  from './components/Sell/Sell'
 
 
 
@@ -73,6 +74,8 @@ function App() {
             <Route path='/health' element={< Health/>} />
             <Route path='/appliance' element={< Appliance/>} />
             <Route path='/arrival' element={< Arrival/>} />
+            <Route path='/sell' element={< Sell/>} />
+
 
 
 

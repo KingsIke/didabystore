@@ -34,7 +34,7 @@ const NewArrivals = () => {
                         <div className="imageArrival ">
 
                             <span>
-                                <AiFillHeart class="imageSpan text-[#C10909]  " />
+                                <AiFillHeart className="imageSpan text-[#C10909]  " />
                             </span>
                             <img src={Cloth} alt="Avatar" className=" rounded-[12px] " />
                         </div>
@@ -78,7 +78,7 @@ const NewArrivals = () => {
                         <div className="imageArrival">
 
                             <span>
-                                <AiOutlineHeart class="imageSpan " />
+                                <AiOutlineHeart className="imageSpan " />
                             </span>
                             <img src={Cloth} alt="Avatar" className=" rounded-[12px] " />
                         </div>
@@ -101,7 +101,7 @@ const NewArrivals = () => {
                         <div className="imageArrival ">
 
                             <span>
-                                <AiOutlineHeart class="imageSpan  " />
+                                <AiOutlineHeart className="imageSpan  " />
                             </span>
                             <img src={Cloth} alt="Avatar" className=" rounded-[12px] " />
                         </div>
@@ -143,7 +143,7 @@ const NewArrivals = () => {
                         <div className="imageArrival ">
 
                             <span>
-                                <AiOutlineHeart class="imageSpan text-[20px] text-black p-[6px] m-0 " />
+                                <AiOutlineHeart className="imageSpan text-[20px] text-black p-[6px] m-0 " />
                             </span>
                             <img src={Shoe} alt="Avatar" className=" rounded-[12px] " />
                         </div>
@@ -165,7 +165,7 @@ const NewArrivals = () => {
                         <div className="imageArrival ]">
 
                             <span>
-                                <AiOutlineHeart class="imageSpan  " />
+                                <AiOutlineHeart className="imageSpan  " />
                             </span>
                             <img src={Shoe} alt="Avatar" className=" rounded-[12px] " />
                         </div>
@@ -187,7 +187,7 @@ const NewArrivals = () => {
                         <div className="imageArrival">
 
                             <span>
-                                <AiOutlineHeart class="imageSpan text-[20px] text-black p-[6px] m-0 " />
+                                <AiOutlineHeart className="imageSpan text-[20px] text-black p-[6px] m-0 " />
                             </span>
                             <img src={Shoe} alt="Avatar" className=" rounded-[12px] " />
                         </div>
@@ -208,7 +208,7 @@ const NewArrivals = () => {
                         <div className="imageArrival ">
 
                             <span>
-                                <AiOutlineHeart class="imageSpan  " />
+                                <AiOutlineHeart className="imageSpan  " />
                             </span>
                             <img src={Shoe} alt="Avatar" className=" rounded-[12px] " />
                         </div>
@@ -240,7 +240,7 @@ const NewArrivals = () => {
                         <div className="imageArrival flex justify-between w-[210px] h-[210px] rounded-[12px]">
 
                             <span>
-                                <AiOutlineHeart class="imageSpan text-[20px] text-black p-[6px] m-0 " />
+                                <AiOutlineHeart className="imageSpan text-[20px] text-black p-[6px] m-0 " />
                             </span>
                             <img src={Perfume} alt="Avatar" className=" rounded-[12px] " />
                         </div>
@@ -262,7 +262,7 @@ const NewArrivals = () => {
                         <div className="imageArrival flex justify-between w-[210px] h-[210px] rounded-[12px]">
 
                             <span>
-                                <AiOutlineHeart class="imageSpan text-[20px] text-black p-[6px] m-0 " />
+                                <AiOutlineHeart className="imageSpan text-[20px] text-black p-[6px] m-0 " />
                             </span>
                             <img src={Perfume} alt="Avatar" className=" rounded-[12px] " />
                         </div>
@@ -285,7 +285,7 @@ const NewArrivals = () => {
                         <div className="imageArrival flex justify-between w-[210px] h-[210px] rounded-[12px]">
 
                             <span>
-                                <AiOutlineHeart class="imageSpan text-[20px] text-black p-[6px] m-0 " />
+                                <AiOutlineHeart className="imageSpan text-[20px] text-black p-[6px] m-0 " />
                             </span>
                             <img src={Perfume} alt="Avatar" className=" rounded-[12px] " />
                         </div>
@@ -308,7 +308,7 @@ const NewArrivals = () => {
                         <div className="imageArrival flex justify-between w-[210px] h-[210px] rounded-[12px]">
 
                             <span>
-                                <AiOutlineHeart class="imageSpan text-[20px] text-black p-[6px] m-0 " />
+                                <AiOutlineHeart className="imageSpan text-[20px] text-black p-[6px] m-0 " />
                             </span>
                             <img src={Perfume} alt="Avatar" className=" rounded-[12px] " />
                         </div>

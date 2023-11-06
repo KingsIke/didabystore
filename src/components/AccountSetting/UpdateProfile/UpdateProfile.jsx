@@ -6,10 +6,10 @@ import { Link } from "react-router-dom";
 
 const UpdateProfile = () => {
   return (
-    <div>
+    <div className='h-[600px]'>
         <NavBar />
 
-        <div className='overflow-hidden  shadow max-w-[600px] h-[435px] bg-white rounded-[15px] mx-auto my-[20px] shadow-4 shadow-y-10 shadow-blur-10 shadow-spread-10 shadow-black'>
+        <div className='overflow-hidden  shadow max-w-[600px] h-[435px] bg-white rounded-[15px] mx-auto mt-[35px] shadow-4 shadow-y-10 shadow-blur-10 shadow-spread-10 shadow-black'>
 
             <div className='flex overflow-hidden'>
                     <div className=' overflow-hidden w-[200px] h-[435px] border border-stone-400 rounded-l-lg '>

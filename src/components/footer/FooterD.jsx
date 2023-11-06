@@ -27,16 +27,16 @@ const FooterD = () => {
                         <p className='text-zinc-100 text-base font-normal whitespace-nowrap'>Everything you want in one place</p>
                         <div className=' flex flex-row mt-4'>
                             <span className=''>
-                                <FiFacebook class="bg-white w-7 h-7 text-[30px] text-black p-1  mr-2 border-solid border-2 border-black rounded-lg " />
+                                <FiFacebook className="bg-white w-7 h-7 text-[30px] text-black p-1  mr-2 border-solid border-2 border-black rounded-lg " />
                             </span>
                             <span>
-                                <FiInstagram class="bg-white w-7 h-7 text-[25px] text-black p-1 mr-2 border-solid border-2 border-black rounded-lg  " />
+                                <FiInstagram className="bg-white w-7 h-7 text-[25px] text-black p-1 mr-2 border-solid border-2 border-black rounded-lg  " />
                             </span>
                             <span>
-                                <FiTwitter class="bg-white  w-7 h-7 text-[25px] text-black p-1 mr-2 border-solid border-2 border-black rounded-lg  " />
+                                <FiTwitter className="bg-white  w-7 h-7 text-[25px] text-black p-1 mr-2 border-solid border-2 border-black rounded-lg  " />
                             </span>
                             <span>
-                                <FaWhatsapp class="bg-white w-7 h-7 text-[25px] text-black p-1 mr-2 border-solid border-2 border-black rounded-lg  " />
+                                <FaWhatsapp className="bg-white w-7 h-7 text-[25px] text-black p-1 mr-2 border-solid border-2 border-black rounded-lg  " />
                             </span>
                         </div>
                     </div>

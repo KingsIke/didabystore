@@ -19,29 +19,29 @@ const Footer = () => {
               Tops
             </Link>
           </li>
-          <li class="flex">
-                                <a href="#" class="hover:text-gray-800">Dresses</a>
+          <li className="flex">
+                                <a href="#" className="hover:text-gray-800">Dresses</a>
                               </li>
-                              <li class="flex">
-                                <a href="#" class="hover:text-gray-800">Pants</a>
+                              <li className="flex">
+                                <a href="#" className="hover:text-gray-800">Pants</a>
                               </li>
-                              <li class="flex">
-                                <a href="#" class="hover:text-gray-800">Denim</a>
+                              <li className="flex">
+                                <a href="#" className="hover:text-gray-800">Denim</a>
                               </li>
-                              <li class="flex">
-                                <a href="#" class="hover:text-gray-800">Sweaters</a>
+                              <li className="flex">
+                                <a href="#" className="hover:text-gray-800">Sweaters</a>
                               </li>
-                              <li class="flex">
-                                <a href="#" class="hover:text-gray-800">T-Shirts</a>
+                              <li className="flex">
+                                <a href="#" className="hover:text-gray-800">T-Shirts</a>
                               </li>
-                              <li class="flex">
-                                <a href="#" class="hover:text-gray-800">Jackets</a>
+                              <li className="flex">
+                                <a href="#" className="hover:text-gray-800">Jackets</a>
                               </li>
-                              <li class="flex">
-                                <a href="#" class="hover:text-gray-800">Activewear</a>
+                              <li className="flex">
+                                <a href="#" className="hover:text-gray-800">Activewear</a>
                               </li>
-                              <li class="flex">
-                                <a href="#" class="hover:text-gray-800">Browse All</a>
+                              <li className="flex">
+                                <a href="#" className="hover:text-gray-800">Browse All</a>
                               </li>
           {/* Other list items */}
         </ul>
@@ -56,20 +56,20 @@ const Footer = () => {
               Watches
             </Link>
           </li>
-          <li class="flex">
-                                <a href="#" class="hover:text-gray-800">Wallets</a>
+          <li className="flex">
+                                <a href="#" className="hover:text-gray-800">Wallets</a>
                               </li>
-                              <li class="flex">
-                                <a href="#" class="hover:text-gray-800">Bags</a>
+                              <li className="flex">
+                                <a href="#" className="hover:text-gray-800">Bags</a>
                               </li>
-                              <li class="flex">
-                                <a href="#" class="hover:text-gray-800">Sunglasses</a>
+                              <li className="flex">
+                                <a href="#" className="hover:text-gray-800">Sunglasses</a>
                               </li>
-                              <li class="flex">
-                                <a href="#" class="hover:text-gray-800">Hats</a>
+                              <li className="flex">
+                                <a href="#" className="hover:text-gray-800">Hats</a>
                               </li>
-                              <li class="flex">
-                                <a href="#" class="hover:text-gray-800">Belts</a>
+                              <li className="flex">
+                                <a href="#" className="hover:text-gray-800">Belts</a>
                               </li>
           {/* Other list items */}
         </ul>
@@ -84,17 +84,17 @@ const Footer = () => {
               Full Nelson
             </Link>
           </li>
-          <li class="flex">
-                                <a href="#" class="hover:text-gray-800">My Way</a>
+          <li className="flex">
+                                <a href="#" className="hover:text-gray-800">My Way</a>
                               </li>
-                              <li class="flex">
-                                <a href="#" class="hover:text-gray-800">Re-Arranged</a>
+                              <li className="flex">
+                                <a href="#" className="hover:text-gray-800">Re-Arranged</a>
                               </li>
-                              <li class="flex">
-                                <a href="#" class="hover:text-gray-800">Counterfeit</a>
+                              <li className="flex">
+                                <a href="#" className="hover:text-gray-800">Counterfeit</a>
                               </li>
-                              <li class="flex">
-                                <a href="#" class="hover:text-gray-800">Significant Other</a>
+                              <li className="flex">
+                                <a href="#" className="hover:text-gray-800">Significant Other</a>
                               </li>
           {/* Other list items */}
         </ul>

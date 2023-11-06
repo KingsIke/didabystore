@@ -1,0 +1,93 @@
+
+.menuDivsell {
+    display: flex;
+    margin-top: 1px;
+    border: 2px solid orange;
+    /* border-radius: 15px; */
+    position: relative;
+    padding-top: 1px;
+  }
+  
+  .unlistMenusell {
+    width: 250px;
+    border: 2px solid blue;
+    /* border-radius: 12px; */
+    
+  }
+  
+  .listedMenusell {
+    border: 2px dashed brown;
+    height: 25px;
+    transition: 0.5s ease;
+    margin-bottom: 8px;
+  }
+  
+  .listedMenusell:hover {
+    background-color: #87C505;
+  }
+  
+  .unlistedSubsell {
+    width: 270px;
+    border: 2px dashed yellow;
+  }
+  
+  .listedSubMenusell {
+    border: 2px dashed blueviolet;
+    height: 30px;
+    padding-left: 5px;
+    margin-left: 30px;
+    transition: 1s ease;
+    /* border-radius: 12px; */
+    margin-bottom: 12px;
+  }
+  
+  .listedSubMenusell:hover {
+    background-color: #87C505;
+  }
+  
+  /* Responsive styles for smaller screens */
+  
+  @media (max-width: 768px) {
+    .menuDiv {
+      flex-direction: column; /* Stack items vertically */
+    }
+  
+    .unlistMenu {
+      width: 100%; /* Expand to full width */
+    }
+  
+    .listedMenu {
+      width: 100%; /* Expand to full width */
+    }
+  
+    .listedSubMenu {
+      width: 100%; /* Expand to full width */
+    }
+  }
+  
+  
+  
+  .selectedItemOverlay {
+    position: absolute;
+    top: 0;
+    left: 100%; /* Position it to the right of the category dropdown */
+    background: white;
+    border: 1px solid #ccc;
+    padding: 10px;
+    z-index: 1; /* Ensure it appears on top of other content */
+  }
+  
+  .selectedItemOverlay ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .selectedItemOverlay li {
+    cursor: pointer;
+  }
+  
+  /* Adjust the styles to match your design and layout preferences */
+  
+  
+  
+  
