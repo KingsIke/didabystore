@@ -1,4 +1,5 @@
 const Categories = [
+
     {
         name: 'Fashion',
         items: ['Clothing', 'Bag', 'Shoe', 'Watch', 'Jewelry', 'Wedding', 'Accessory'],
@@ -31,7 +32,7 @@ const Categories = [
         name: 'Appliances',
         items: ['Home Appliance', 'Furniture', 'Office Appliance', 'Kitchenware and Cookware'],
     },
-    // Add more categories here
+   
 ];
 
 const Locations = [

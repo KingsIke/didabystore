@@ -42,8 +42,52 @@ export default function Category() {
   const handleOptionClick = (item) => {
     setSelectedItem(item);
     setSelectedCategory(item); // Update the selected category text with the clicked item
+    // window.location.href = `/category/${item.toLowerCase()}`;
+
   };
 
+  function formatCategoryForURL(category) {
+    // Replace spaces with hyphens and handle other special characters
+    const formattedCategory = category
+      .toLowerCase()
+      .replace(/ /g, '-') // Replace spaces with hyphens
+      .replace(/&/g, ''); // Remove ampersands (you can add more replacements as needed)
+  
+    return formattedCategory;
+  }
+
+
+  const handleSearchClick = () => {
+    // Navigate to the formatted category route only if a category is selected
+    if (selectedCategory) {
+      const formattedCategory = formatCategoryForURL(selectedCategory);
+      window.location.href = `/${formattedCategory}`;
+    } else {
+      // Handle the case when no category is selected
+      console.error('Please select a category before clicking search.');
+    }
+  };
+
+  // const handleSearchClick = () => {
+  //   // Navigate to the selected category route only if a category is selected
+  //   if (selectedCategory) {
+  //     const encodedCategory = encodeURIComponent(selectedCategory.toLowerCase());
+  //     window.location.href = `/${encodedCategory}`;
+  //   } else {
+  //     // Handle the case when no category is selected
+  //     console.error('Please select a category before clicking search.');
+  //   }
+  // };
+
+  // const handleSearchClick = () => {
+  //   // Navigate to the selected category route only if a category is selected
+  //   if (selectedCategory) {
+  //     window.location.href = `/${selectedCategory.toLowerCase()}`;
+  //   } else {
+  //     // Handle the case when no category is selected
+  //     console.error('Please select a category before clicking search.');
+  //   }
+  // };
   const handleOptionLeave = () => {
     setSelectedItem(null);
   };
@@ -99,7 +143,7 @@ export default function Category() {
               </ul>
               {selectedItem && (
                 <div className=' '> 
-                {/* absolute left-[350px] */}
+              
                   <ul className='unlistedSub'>
                     {selectedItem.items && selectedItem.items.map((item, index) => (
 
@@ -184,7 +228,9 @@ export default function Category() {
 
       {/* SEARCH BUTTON  */}
       <div className='border border-blue-500'>
-        <button type="submit" className='border border-green-500 w-[100px] h-[40px] rounded-[11px] bg-black text-white'>Search</button>
+        <button type="submit" className='border border-green-500 w-[100px] h-[40px] rounded-[11px] bg-black text-white' onClick={handleSearchClick}>
+          Search
+        </button>
       </div>
 
 

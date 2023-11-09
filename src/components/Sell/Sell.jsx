@@ -1,13 +1,14 @@
-import React, { useState } from 'react'
+import React, { useState, useRef } from 'react'
 import { NavBar } from '../Nav/NavBar/NavBar';
-// import Account from '../../../images/account.png';
 import { Link } from "react-router-dom";
-import { AiOutlineEyeInvisible, AiOutlineEye } from 'react-icons/ai';
-// import React, { useState } from 'react';
+import { FiUpload } from 'react-icons/fi';
+import { AiFillDelete } from 'react-icons/ai';
+
+
 import { IoIosArrowDown } from 'react-icons/io';
 import './Sell.css';
 import { Categories, Locations, Genders } from '../Category/MenuItems';
-// import { Link } from 'react-router-dom';
+
 
 
 const Sell = () => {
@@ -77,15 +78,34 @@ const Sell = () => {
     };
 
 
+    const [imagesArray, setImagesArray] = useState([]);
+
+    const fileInputRef = useRef(null);
+
+    const handleFileChange = (e) => {
+        const fileObjects = e.target.files;
+        const selectedFileArray = Array.from(fileObjects);
+
+        const updatedImagesArray = selectedFileArray.map((file) => {
+            return URL.createObjectURL(file);
+        });
+
+        //   setImagesArray(updatedImagesArray);
+        setImagesArray((previousImage) => previousImage.concat(updatedImagesArray));
+
+    };
+
+
+
     return (
         <div className='h-[600px]'>
 
             <NavBar />
 
-            <div className='overflow-hidden  shadow max-w-[600px] h-[480px] bg-white rounded-[15px] mx-auto mt-[40px] shadow-4 shadow-y-10 shadow-blur-10 shadow-spread-10 shadow-black'>
+            <div className='overflow-hidden  shadow max-w-[600px] h-[515px] bg-white rounded-[15px] mx-auto mt-[20px] shadow-4 shadow-y-10 shadow-blur-10 shadow-spread-10 shadow-black'>
 
                 <div className=' overflow-hidden mx-4 w-[550px] border border-red-600 '>
-                    <h1>Sell</h1>
+                    <h1 className='pl-3 font-bold'>Sell</h1>
 
 
 
@@ -94,7 +114,7 @@ const Sell = () => {
                     <div className=' flex flex-row justify-between  ml-2 mr-3 my-3 category-container '>
                         <div className='category-dropdown' onClick={() => handleToggleClick(0)}>
                             <p>Category</p>
-                            <div className='cursor-pointer flex justify-between w-[250px] h-[30px] rounded-[15px] border border-stone-300 text-center'>
+                            <div className='cursor-pointer flex justify-between w-[250px] h-[30px] rounded-[9px] border border-stone-300 text-center'>
                                 <h1 className=' text-zinc-500 text-center pl-3 pt-1'>{selectedCategory}</h1>
                                 <p className='py-2 pr-3 overflow-hidden'>
                                     <IoIosArrowDown />
@@ -141,7 +161,7 @@ const Sell = () => {
 
                         <div className='' onClick={() => handleToggleClick(1)}>
                             <p>Location</p>
-                            <div className='cursor-pointer flex justify-between w-[250px] h-[30px] rounded-[15px] border border-stone-300 text-center'>
+                            <div className='cursor-pointer flex justify-between w-[250px] h-[30px] rounded-[9px] border border-stone-300 text-center'>
                                 <h1 className='text-zinc-500 text-center pl-3 pt-1'>{selectedLocation}</h1>
                                 <p className='py-2 pr-3 overflow-hidden'>
                                     <IoIosArrowDown />
@@ -178,20 +198,15 @@ const Sell = () => {
 
                             <label htmlFor="">Product Name</label>
 
-                            <input type="text" name="" id="" placeholder='Female High heeled shoe' className='w-[250px] h-[30px] rounded-[12px] text-xs border border-stone-300' />
+                            <input type="text" name="" id="" placeholder='Female High heeled shoe' className='w-[250px] h-[30px] rounded-[9px] text-xs border border-stone-300' />
                         </div>
 
                         <div className='flex flex-col'>
 
                             <label htmlFor="">Price</label>
 
-                            <input type="text" name="" id="" placeholder='N25,000' className='w-[250px] h-[30px] rounded-[12px] text-xs border border-stone-300' />
+                            <input type="text" name="" id="" placeholder='N25,000' className='w-[250px] h-[30px] rounded-[9px] text-xs border border-stone-300' />
                         </div>
-
-
-
-
-
 
 
 
@@ -207,25 +222,15 @@ const Sell = () => {
 
                             <label htmlFor="">Size</label>
 
-                            <input type="text" name="" id="" placeholder='40, 41, 42' className='w-[250px] h-[30px] rounded-[12px] text-xs border border-stone-300' />
+                            <input type="text" name="" id="" placeholder='40, 41, 42' className='w-[250px] h-[30px] rounded-[9px] text-xs border border-stone-300' />
                         </div>
 
                         <div className='flex flex-col'>
 
                             <label htmlFor="">Available Colours</label>
 
-                            <input type="text" name="" id="" placeholder='Black, Brown, White' className='w-[250px] h-[30px] rounded-[12px] text-xs border border-stone-300' />
+                            <input type="text" name="" id="" placeholder='Black, Brown, White' className='w-[250px] h-[30px] rounded-[9px] text-xs border border-stone-300' />
                         </div>
-
-
-
-
-
-
-
-
-
-
 
                     </div>
 
@@ -236,7 +241,7 @@ const Sell = () => {
 
                         <div className='' onClick={() => handleToggleClick(2)}>
                             <p>Gender</p>
-                            <div className='cursor-pointer flex justify-between w-[250px] h-[30px] rounded-[15px] border border-stone-300 text-center'>
+                            <div className='cursor-pointer flex justify-between w-[250px] h-[30px] rounded-[9px] border border-stone-300 text-center'>
                                 <h1 className='text-zinc-500 text-center pl-3 pt-1'>{selectedGender}</h1>
                                 <p className='py-2 pr-3 overflow-hidden'>
                                     <IoIosArrowDown />
@@ -266,32 +271,117 @@ const Sell = () => {
 
                             <label htmlFor="">Brand</label>
 
-                            <input type="text" name="" id="" className='w-[250px] h-[30px] rounded-[12px] text-xs border border-stone-300' />
+                            <input type="text" name="" id="" className='w-[250px] h-[30px] rounded-[9px] text-xs border border-stone-300' />
                         </div>
                     </div>
 
 
-                
+
                     <div className=' flex flex-row justify-between  ml-2 mr-3 my-3  '>
-    
-<div class="flex items-center justify-center w-full">
-    <label for="dropzone-file" class="flex flex-col items-center justify-center w-full h-32 border-2 border-gray-300 border-dashed rounded-lg cursor-pointer bg-gray-50 dark:hover:bg-bray-800 dark:bg-gray-700 hover:bg-gray-100 dark:border-gray-600 dark:hover:border-gray-500 dark:hover:bg-gray-600">
-        <div class="flex flex-col items-center justify-center pt-5 pb-6">
-            <svg class="w-8 h-8 mb-4 text-gray-500 dark:text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 16">
-                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 13h3a3 3 0 0 0 0-6h-.025A5.56 5.56 0 0 0 16 6.5 5.5 5.5 0 0 0 5.207 5.021C5.137 5.017 5.071 5 5 5a4 4 0 0 0 0 8h2.167M10 15V6m0 0L8 8m2-2 2 2"/>
-            </svg>
-            <p class="mb-2 text-sm text-gray-500 dark:text-gray-400"><span class="font-semibold">Click to upload</span> or drag and drop</p>
-            <p class="text-xs text-gray-500 dark:text-gray-400">SVG, PNG, JPG or GIF (MAX. 800x400px)</p>
-        </div>
-        <input id="dropzone-file" type="file" class="hidden" />
-    </label>
-</div> 
+
+                        <div className='flex flex-col '>
+                            <label htmlFor="">Add Photos</label>
+                            <div
+                                className=" flex items-center justify-center w-[250px] h-[120px] border border-dashed border-[#868686] rounded-[12px] text-xs"
+                                onClick={() => fileInputRef.current.click()}
+                            >
+                                <div className="overflow-hidden flex flex-col w-full h-full items-center justify-center mt-auto">
+                                    {imagesArray.length === 0 && (
+                                        <>
+                                            <FiUpload className='w-8 h-8 mb-2 font-bold text-gray-500 dark:text-gray-400' />
+
+                                            <p class="overflow-hidden mb-2 text-sm text-gray-500 dark:text-gray-400">
+                                                <span class="font-bold text-[#070707]">Click to upload</span> or drag and drop
+                                            </p>
+                                            <p class=" overflow-hidden text-[9px] text-gray-500 dark:text-gray-400">Supported formats are .jpg, .gif and .png, 5MB max</p>
+                                        </>
+                                    )}
+
+                                    <input
+                                        type="file"
+                                        id="file-input"
+                                        multiple
+                                        hidden
+                                        onChange={handleFileChange}
+                                        accept='image/png, image/jpeg, image/gif'
+                                        ref={fileInputRef}
+                                    />
+                                    <br />
+                                    {imagesArray.length > 0 && (imagesArray.length > 4 ? (
+                                        <button className='overflow-hidden mb-2 '>you can upload only 4 images!{imagesArray.length - 4}</button>
+                                    ) : (
+                                        <button className='text-green-600'>
+                                            Upload
+                                        </button>
+                                    ))}
+                                    <div id="preview" className='flex flex-wrap overflow-hidden'>
+                                        {imagesArray && imagesArray.map((image, index) => {
+                                            return (
+                                                <div key={image}>
+                                                    <img src={image} alt="pictures" className='h-[60px] w-[60px]' />
+                                                    <button onClick={() => setImagesArray(imagesArray.filter((e) => e !== image))}
+
+                                                    >
+                                                        <AiFillDelete className='text-[#e43a94] hover:text-red-500' />
+                                                    </button>
+                                                </div>
+                                            )
+                                        })}
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div className='flex flex-col '>
+
+                            <label htmlFor="">Description</label>
+
+                            <input type="text" name="" id="" className='w-[250px] h-[120px] rounded-[9px] text-xs border border-stone-300' />
+                        </div>
+                    </div>
+
+
+                    {/* BUTTONS  */}
+                    <div className=' flex flex-row justify-between  ml-2 mr-3 my-3  '>
+                        <div className='flex flex-col '>
+                            <button
+                                type="submit"
+                                className="text-center  border border-yellow-700  text-sm w-[80px] h-[35px] rounded-[11px] bg-[#f8f8f8] py-1 mt-3 hover:bg-[#87C505]"
+                            >
+                                 <Link to="/home">
+  
+   
+                                Cancel
+                                </Link>
+                            </button>
+                        </div>
+
+                        <div className='flex flex-col '>
+                            <button
+                                type="submit"
+                                className="text-center ml-[229px] font-bold border border-yellow-700 text-white text-xs w-[80px] h-[35px] rounded-[11px] bg-[#87C505] py-1 mt-3 hover:bg-[#fafafa] hover:text-black"
+                            >
+                                Sell Now
+                            </button>
+                        </div>
+
+
+
+
+                    </div>
+
 
                 </div>
-</div>
             </div>
+
+
+
         </div>
     )
 }
 
 export default Sell
+
+
+
